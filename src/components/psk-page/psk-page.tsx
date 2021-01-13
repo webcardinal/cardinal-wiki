@@ -1,13 +1,8 @@
-import { Chapter } from "../../../../wiki/src/interfaces/Chapter";
 import { Component, h, Prop, Listen, State, Element } from "@stencil/core";
-
-import CustomTheme from "../../decorators/CustomTheme";
-
-import { highlightChapter } from "../../utils/highlightChapter";
-import { scrollToElement, createCustomEvent } from "../../utils/utilFunctions";
-import { TableOfContentProperty } from "../../decorators/TableOfContentProperty";
-import { BindModel } from "../../decorators/BindModel";
-import NavigationTrackerService from "../psk-ssapp/NavigationTrackerService.js";
+import { BindModel, CustomTheme, NavigationTrackerService, TableOfContentProperty } from "@cardinal/core";
+import { scrollToElement, createCustomEvent } from "@cardinal/core"; // utils
+import { Chapter } from "../../interfaces";
+import highlightChapter from "./highlightChapter";
 
 @Component({
 	tag: "psk-page",

@@ -1,4 +1,4 @@
-export interface Chapter {
+export default interface Chapter {
     index?: number;
     title: string;
     guid: string;

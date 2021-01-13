@@ -17,7 +17,13 @@ export namespace Components {
         "language": string;
         "title": string;
     }
+    interface PskControllerDescriptor {
+        "title": string;
+    }
     interface PskDescription {
+        "title": string;
+    }
+    interface PskEventDescriptor {
         "title": string;
     }
     interface PskExample {
@@ -26,6 +32,20 @@ export namespace Components {
     interface PskLiveCode {
         "language": string;
         "value": string;
+    }
+    interface PskPage {
+        "badgeBackgroundColor": string;
+        "badgeText": string;
+        "badgeTextColor": string;
+        "hasToc": boolean;
+        "navigationTitle": string;
+        "pageClass": string;
+        "subTitle": string;
+        "title": string;
+        "tocTitle": string;
+    }
+    interface PskPropertyDescriptor {
+        "title": string;
     }
     interface PskTable {
         "cellsWidth": string;
@@ -55,11 +75,23 @@ declare global {
         prototype: HTMLPskCodeElement;
         new (): HTMLPskCodeElement;
     };
+    interface HTMLPskControllerDescriptorElement extends Components.PskControllerDescriptor, HTMLStencilElement {
+    }
+    var HTMLPskControllerDescriptorElement: {
+        prototype: HTMLPskControllerDescriptorElement;
+        new (): HTMLPskControllerDescriptorElement;
+    };
     interface HTMLPskDescriptionElement extends Components.PskDescription, HTMLStencilElement {
     }
     var HTMLPskDescriptionElement: {
         prototype: HTMLPskDescriptionElement;
         new (): HTMLPskDescriptionElement;
+    };
+    interface HTMLPskEventDescriptorElement extends Components.PskEventDescriptor, HTMLStencilElement {
+    }
+    var HTMLPskEventDescriptorElement: {
+        prototype: HTMLPskEventDescriptorElement;
+        new (): HTMLPskEventDescriptorElement;
     };
     interface HTMLPskExampleElement extends Components.PskExample, HTMLStencilElement {
     }
@@ -72,6 +104,18 @@ declare global {
     var HTMLPskLiveCodeElement: {
         prototype: HTMLPskLiveCodeElement;
         new (): HTMLPskLiveCodeElement;
+    };
+    interface HTMLPskPageElement extends Components.PskPage, HTMLStencilElement {
+    }
+    var HTMLPskPageElement: {
+        prototype: HTMLPskPageElement;
+        new (): HTMLPskPageElement;
+    };
+    interface HTMLPskPropertyDescriptorElement extends Components.PskPropertyDescriptor, HTMLStencilElement {
+    }
+    var HTMLPskPropertyDescriptorElement: {
+        prototype: HTMLPskPropertyDescriptorElement;
+        new (): HTMLPskPropertyDescriptorElement;
     };
     interface HTMLPskTableElement extends Components.PskTable, HTMLStencilElement {
     }
@@ -89,9 +133,13 @@ declare global {
         "psk-chapter": HTMLPskChapterElement;
         "psk-chapter-wrapper": HTMLPskChapterWrapperElement;
         "psk-code": HTMLPskCodeElement;
+        "psk-controller-descriptor": HTMLPskControllerDescriptorElement;
         "psk-description": HTMLPskDescriptionElement;
+        "psk-event-descriptor": HTMLPskEventDescriptorElement;
         "psk-example": HTMLPskExampleElement;
         "psk-live-code": HTMLPskLiveCodeElement;
+        "psk-page": HTMLPskPageElement;
+        "psk-property-descriptor": HTMLPskPropertyDescriptorElement;
         "psk-table": HTMLPskTableElement;
         "psk-toc": HTMLPskTocElement;
     }
@@ -109,7 +157,13 @@ declare namespace LocalJSX {
         "language"?: string;
         "title"?: string;
     }
+    interface PskControllerDescriptor {
+        "title"?: string;
+    }
     interface PskDescription {
+        "title"?: string;
+    }
+    interface PskEventDescriptor {
         "title"?: string;
     }
     interface PskExample {
@@ -118,6 +172,20 @@ declare namespace LocalJSX {
     interface PskLiveCode {
         "language"?: string;
         "value"?: string;
+    }
+    interface PskPage {
+        "badgeBackgroundColor"?: string;
+        "badgeText"?: string;
+        "badgeTextColor"?: string;
+        "hasToc"?: boolean;
+        "navigationTitle"?: string;
+        "pageClass"?: string;
+        "subTitle"?: string;
+        "title"?: string;
+        "tocTitle"?: string;
+    }
+    interface PskPropertyDescriptor {
+        "title"?: string;
     }
     interface PskTable {
         "cellsWidth"?: string;
@@ -131,9 +199,13 @@ declare namespace LocalJSX {
         "psk-chapter": PskChapter;
         "psk-chapter-wrapper": PskChapterWrapper;
         "psk-code": PskCode;
+        "psk-controller-descriptor": PskControllerDescriptor;
         "psk-description": PskDescription;
+        "psk-event-descriptor": PskEventDescriptor;
         "psk-example": PskExample;
         "psk-live-code": PskLiveCode;
+        "psk-page": PskPage;
+        "psk-property-descriptor": PskPropertyDescriptor;
         "psk-table": PskTable;
         "psk-toc": PskToc;
     }
@@ -145,9 +217,13 @@ declare module "@stencil/core" {
             "psk-chapter": LocalJSX.PskChapter & JSXBase.HTMLAttributes<HTMLPskChapterElement>;
             "psk-chapter-wrapper": LocalJSX.PskChapterWrapper & JSXBase.HTMLAttributes<HTMLPskChapterWrapperElement>;
             "psk-code": LocalJSX.PskCode & JSXBase.HTMLAttributes<HTMLPskCodeElement>;
+            "psk-controller-descriptor": LocalJSX.PskControllerDescriptor & JSXBase.HTMLAttributes<HTMLPskControllerDescriptorElement>;
             "psk-description": LocalJSX.PskDescription & JSXBase.HTMLAttributes<HTMLPskDescriptionElement>;
+            "psk-event-descriptor": LocalJSX.PskEventDescriptor & JSXBase.HTMLAttributes<HTMLPskEventDescriptorElement>;
             "psk-example": LocalJSX.PskExample & JSXBase.HTMLAttributes<HTMLPskExampleElement>;
             "psk-live-code": LocalJSX.PskLiveCode & JSXBase.HTMLAttributes<HTMLPskLiveCodeElement>;
+            "psk-page": LocalJSX.PskPage & JSXBase.HTMLAttributes<HTMLPskPageElement>;
+            "psk-property-descriptor": LocalJSX.PskPropertyDescriptor & JSXBase.HTMLAttributes<HTMLPskPropertyDescriptorElement>;
             "psk-table": LocalJSX.PskTable & JSXBase.HTMLAttributes<HTMLPskTableElement>;
             "psk-toc": LocalJSX.PskToc & JSXBase.HTMLAttributes<HTMLPskTocElement>;
         }

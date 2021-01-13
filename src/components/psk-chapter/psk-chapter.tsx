@@ -1,8 +1,7 @@
 import { Component, Event, EventEmitter, getElement, h, Listen, Prop, State } from "@stencil/core";
 import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from "@cardinal/core";
 import { normalizeElementId } from "@cardinal/core"; // utils
-
-import { Chapter } from "../../interfaces/Chapter";
+import { Chapter } from "../../interfaces";
 
 @Component({
     tag: "psk-chapter",
