@@ -1,4 +1,4 @@
-import { closestParentTagElement } from "@cardinal/core"; // utils
+import { closestParentTagElement } from "@cardinal/internals"; // utils
 import { ChapterDetails } from "../../interfaces";
 
 export default function highlightChapter(): void {

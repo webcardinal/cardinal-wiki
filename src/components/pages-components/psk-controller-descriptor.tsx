@@ -1,5 +1,5 @@
 import { Component, Prop, State, Listen, h } from "@stencil/core";
-import { normalizeElementId } from "@cardinal/core";
+import { normalizeElementId } from "@cardinal/internals";
 import { EventOptions } from "../../decorators/declarations/declarations";
 
 @Component({

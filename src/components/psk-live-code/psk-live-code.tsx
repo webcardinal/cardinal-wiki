@@ -1,5 +1,5 @@
 import { Component, Element, h, Prop } from '@stencil/core';
-import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/core';
+import { BindModel, CustomTheme, TableOfContentProperty } from '@cardinal/internals';
 
 // @ts-ignore
 // TODO: Check the possibility to integrate PrismJs internally

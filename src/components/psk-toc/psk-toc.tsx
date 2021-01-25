@@ -1,6 +1,6 @@
 import { Component, getElement, h, Listen, Prop, State } from '@stencil/core';
-import { CustomTheme, TableOfContentProperty } from '@cardinal/core';
-import { closestParentElement, scrollToElement } from '@cardinal/core'; // utils
+import { CustomTheme, TableOfContentProperty } from '@cardinal/internals';
+import { closestParentElement, scrollToElement } from '@cardinal/internals'; // utils
 import { Chapter } from '../../interfaces';
 
 @Component({

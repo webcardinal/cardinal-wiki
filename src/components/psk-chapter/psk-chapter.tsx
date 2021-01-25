@@ -1,6 +1,6 @@
 import { Component, Event, EventEmitter, getElement, h, Listen, Prop, State } from "@stencil/core";
-import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from "@cardinal/core";
-import { normalizeElementId } from "@cardinal/core"; // utils
+import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from "@cardinal/internals";
+import { normalizeElementId } from "@cardinal/internals"; // utils
 import { Chapter } from "../../interfaces";
 
 @Component({

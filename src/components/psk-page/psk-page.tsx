@@ -1,6 +1,6 @@
 import { Component, h, Prop, Listen, State, Element } from "@stencil/core";
-import { BindModel, CustomTheme, NavigationTrackerService, TableOfContentProperty } from "@cardinal/core";
-import { scrollToElement, createCustomEvent } from "@cardinal/core"; // utils
+import { BindModel, CustomTheme, NavigationTrackerService, TableOfContentProperty } from "@cardinal/internals";
+import { scrollToElement, createCustomEvent } from "@cardinal/internals"; // utils
 import { Chapter } from "../../interfaces";
 import highlightChapter from "./highlightChapter";
 

@@ -1,5 +1,5 @@
 import { Component, Element, h, State, Prop } from "@stencil/core";
-import { BindModel, CustomTheme, TableOfContentProperty } from "@cardinal/core";
+import { BindModel, CustomTheme, TableOfContentProperty } from "@cardinal/internals";
 
 import Prism from 'prismjs';
 import "prismjs/components/prism-json.js";

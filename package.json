@@ -14,7 +14,8 @@
     "build/dist"
   ],
   "scripts": {
-    "build": "npm i @cardinal/core --save-dev && stencil build --prod",
+    "internals": "cd node_modules/@cardinal/internals && npm install && npm run build",
+    "build": "stencil build --prod",
     "dev": "stencil build --dev",
     "generate": "stencil generate"
   },
@@ -22,7 +23,7 @@
     "prismjs": "^1.21.0"
   },
   "devDependencies": {
-    "@cardinal/core": "https://github.com/webcardinal/cardinal-core",
+    "@cardinal/internals": "https://github.com/webcardinal/cardinal-internals",
     "@stencil/core": "^2.3.0"
   },
   "repository": {
