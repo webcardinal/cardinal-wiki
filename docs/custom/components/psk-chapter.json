@@ -1,0 +1,102 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-chapter",
+  "filePath": "./src/components/psk-chapter/psk-chapter.tsx",
+  "fileName": "psk-chapter.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-chapter/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-chapter/usage",
+  "tag": "psk-chapter",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [
+    "psk-chapter-wrapper",
+    "psk-code",
+    "psk-controller-descriptor",
+    "psk-description",
+    "psk-event-descriptor",
+    "psk-example",
+    "psk-property-descriptor"
+  ],
+  "dependencies": [],
+  "dependencyGraph": {
+    "psk-chapter-wrapper": [
+      "psk-chapter"
+    ],
+    "psk-code": [
+      "psk-chapter"
+    ],
+    "psk-controller-descriptor": [
+      "psk-chapter"
+    ],
+    "psk-description": [
+      "psk-chapter"
+    ],
+    "psk-event-descriptor": [
+      "psk-chapter"
+    ],
+    "psk-example": [
+      "psk-chapter"
+    ],
+    "psk-property-descriptor": [
+      "psk-chapter"
+    ]
+  },
+  "props": [
+    {
+      "name": "guid",
+      "type": "string",
+      "mutable": true,
+      "attr": "guid",
+      "reflectToAttr": true,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "mutable": false,
+      "attr": "title",
+      "reflectToAttr": true,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [
+    {
+      "event": "psk-send-chapter",
+      "detail": "any",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": false,
+      "docs": "",
+      "docsTags": []
+    }
+  ],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": [
+    {
+      "event": "psk-send-chapter",
+      "capture": false,
+      "passive": false
+    }
+  ]
+}

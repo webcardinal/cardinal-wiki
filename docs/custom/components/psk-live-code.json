@@ -1,0 +1,57 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-live-code",
+  "filePath": "./src/components/psk-live-code/psk-live-code.tsx",
+  "fileName": "psk-live-code.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-live-code/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-live-code/usage",
+  "tag": "psk-live-code",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "shadow",
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "props": [
+    {
+      "name": "language",
+      "type": "string",
+      "mutable": false,
+      "attr": "language",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "'markup'",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "mutable": false,
+      "attr": "value",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "''",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

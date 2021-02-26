@@ -1,0 +1,58 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-chapter",
+  "filePath": "./src/components/psk-chapter/psk-chapter-wrapper.tsx",
+  "fileName": "psk-chapter-wrapper.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-chapter/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-chapter/usage",
+  "tag": "psk-chapter-wrapper",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [
+    "psk-controller-descriptor",
+    "psk-event-descriptor",
+    "psk-property-descriptor"
+  ],
+  "dependencies": [
+    "psk-chapter"
+  ],
+  "dependencyGraph": {
+    "psk-chapter-wrapper": [
+      "psk-chapter"
+    ],
+    "psk-controller-descriptor": [
+      "psk-chapter-wrapper"
+    ],
+    "psk-event-descriptor": [
+      "psk-chapter-wrapper"
+    ],
+    "psk-property-descriptor": [
+      "psk-chapter-wrapper"
+    ]
+  },
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "mutable": false,
+      "attr": "title",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

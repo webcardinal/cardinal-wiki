@@ -1,0 +1,63 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-code",
+  "filePath": "./src/components/psk-code/psk-code.tsx",
+  "fileName": "psk-code.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-code/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-code/usage",
+  "tag": "psk-code",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "none",
+  "dependents": [],
+  "dependencies": [
+    "psk-chapter"
+  ],
+  "dependencyGraph": {
+    "psk-code": [
+      "psk-chapter"
+    ]
+  },
+  "props": [
+    {
+      "name": "language",
+      "type": "string",
+      "mutable": false,
+      "attr": "language",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "'xml'",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "mutable": false,
+      "attr": "title",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": []
+}

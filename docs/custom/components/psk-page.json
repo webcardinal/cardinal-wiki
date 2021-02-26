@@ -1,0 +1,178 @@
+{
+  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-page",
+  "filePath": "./src/components/psk-page/psk-page.tsx",
+  "fileName": "psk-page.tsx",
+  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-page/readme.md",
+  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-page/usage",
+  "tag": "psk-page",
+  "usage": {},
+  "docs": "",
+  "docsTags": [],
+  "encapsulation": "shadow",
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "props": [
+    {
+      "name": "badgeBackgroundColor",
+      "type": "string",
+      "mutable": false,
+      "attr": "badge-background-color",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "badgeText",
+      "type": "string",
+      "mutable": false,
+      "attr": "badge-text",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "badgeTextColor",
+      "type": "string",
+      "mutable": false,
+      "attr": "badge-text-color",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "hasToc",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "has-toc",
+      "reflectToAttr": true,
+      "docs": "",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "navigationTitle",
+      "type": "string",
+      "mutable": false,
+      "attr": "navigation-title",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "pageClass",
+      "type": "string",
+      "mutable": false,
+      "attr": "page-class",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "subTitle",
+      "type": "string",
+      "mutable": false,
+      "attr": "sub-title",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "mutable": false,
+      "attr": "title",
+      "reflectToAttr": true,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "tocTitle",
+      "type": "string",
+      "mutable": false,
+      "attr": "toc-title",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "events": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "listeners": [
+    {
+      "event": "psk-send-chapter",
+      "capture": false,
+      "passive": false
+    }
+  ]
+}
