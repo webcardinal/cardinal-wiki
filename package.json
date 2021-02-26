@@ -23,7 +23,6 @@
     "prismjs": "^1.21.0"
   },
   "devDependencies": {
-    "@cardinal/internals": "https://github.com/webcardinal/cardinal-internals",
     "@stencil/core": "^2.3.0"
   },
   "repository": {
