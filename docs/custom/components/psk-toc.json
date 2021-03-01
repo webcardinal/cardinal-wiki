@@ -1,9 +1,6 @@
 {
-  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-toc",
   "filePath": "./src/components/psk-toc/psk-toc.tsx",
   "fileName": "psk-toc.tsx",
-  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-toc/readme.md",
-  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/psk-toc/usage",
   "tag": "psk-toc",
   "usage": {},
   "docs": "",

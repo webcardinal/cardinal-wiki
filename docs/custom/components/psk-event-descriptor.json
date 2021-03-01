@@ -1,9 +1,6 @@
 {
-  "dirPath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/pages-components",
   "filePath": "./src/components/pages-components/psk-event-descriptor.tsx",
   "fileName": "psk-event-descriptor.tsx",
-  "readmePath": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/pages-components/readme.md",
-  "usagesDir": "D:/Work/webcardinal-app-starter/.webcardinal/components/cardinal-wiki/src/components/pages-components/usage",
   "tag": "psk-event-descriptor",
   "usage": {},
   "docs": "",
