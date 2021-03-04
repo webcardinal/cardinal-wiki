@@ -1,50 +1,38 @@
 {
   "psk-chapter": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-chapter.json"
+    "source": "@cardinal/wiki"
   },
   "psk-chapter-wrapper": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-chapter-wrapper.json"
+    "source": "@cardinal/wiki"
   },
   "psk-code": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-code.json"
+    "source": "@cardinal/wiki"
   },
   "psk-controller-descriptor": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-controller-descriptor.json"
+    "source": "@cardinal/wiki"
   },
   "psk-description": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-description.json"
+    "source": "@cardinal/wiki"
   },
   "psk-event-descriptor": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-event-descriptor.json"
+    "source": "@cardinal/wiki"
   },
   "psk-example": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-example.json"
+    "source": "@cardinal/wiki"
   },
   "psk-live-code": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-live-code.json"
+    "source": "@cardinal/wiki"
   },
   "psk-page": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-page.json"
+    "source": "@cardinal/wiki"
   },
   "psk-property-descriptor": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-property-descriptor.json"
+    "source": "@cardinal/wiki"
   },
   "psk-table": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-table.json"
+    "source": "@cardinal/wiki"
   },
   "psk-toc": {
-    "source": "@cardinal/wiki",
-    "path": "components/psk-toc.json"
+    "source": "@cardinal/wiki"
   }
 }
