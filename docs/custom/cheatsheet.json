@@ -3,22 +3,26 @@
     "source": "@cardinal/wiki"
   },
   "psk-chapter-wrapper": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/wiki",
+    "disableCheatsheet": true
   },
   "psk-code": {
     "source": "@cardinal/wiki"
   },
   "psk-controller-descriptor": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/wiki",
+    "disableCheatsheet": true
   },
   "psk-description": {
     "source": "@cardinal/wiki"
   },
   "psk-event-descriptor": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/wiki",
+    "disableCheatsheet": true
   },
   "psk-example": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/wiki",
+    "disableCheatsheet": true
   },
   "psk-live-code": {
     "source": "@cardinal/wiki"
@@ -27,7 +31,8 @@
     "source": "@cardinal/wiki"
   },
   "psk-property-descriptor": {
-    "source": "@cardinal/wiki"
+    "source": "@cardinal/wiki",
+    "disableCheatsheet": true
   },
   "psk-table": {
     "source": "@cardinal/wiki"

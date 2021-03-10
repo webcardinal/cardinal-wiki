@@ -1,5 +1,8 @@
 import { Component, h, Prop } from "@stencil/core";
 
+/**
+ * @disable cheatsheet
+ */
 @Component({
     tag: "psk-chapter-wrapper"
 })

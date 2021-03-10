@@ -164,7 +164,24 @@
   "events": [],
   "styles": [],
   "slots": [],
-  "parts": [],
+  "parts": [
+    {
+      "name": "page-container",
+      "docs": ""
+    },
+    {
+      "name": "page-grid",
+      "docs": ""
+    },
+    {
+      "name": "page-slot-container",
+      "docs": ""
+    },
+    {
+      "name": "page-toc",
+      "docs": ""
+    }
+  ],
   "listeners": [
     {
       "event": "psk-send-chapter",

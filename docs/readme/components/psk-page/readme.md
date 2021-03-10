@@ -20,6 +20,16 @@
 | `tocTitle`             | `toc-title`              |             | `string`  | `undefined` |
 
 
+## Shadow Parts
+
+| Part                    | Description |
+| ----------------------- | ----------- |
+| `"page-container"`      |             |
+| `"page-grid"`           |             |
+| `"page-slot-container"` |             |
+| `"page-toc"`            |             |
+
+
 ----------------------------------------------
 
 *Made by [WebCardinal](https://github.com/webcardinal) contributors.*
