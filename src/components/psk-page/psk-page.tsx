@@ -76,13 +76,13 @@ export class PskPage {
 		this.hasToc && this._sendTableOfContentChapters();
 
 		const tableOfContentSlot = (
-			<div class="toc">
+			<div class="toc" part="page-toc">
 				<slot name="toc" />
 			</div>
 		);
 
 		return (
-			<div class={`main-container ${this.pageClass}`}>
+			<div class={`main-container ${this.pageClass}`} part="page-main">
 
         {this.badgeText?<div class="psk-badge" style={{backgroundColor:this.badgeBackgroundColor}}>
           <div class="psk-badge-text" style={{color:this.badgeTextColor}}>{this.badgeText}</div>
@@ -90,12 +90,12 @@ export class PskPage {
 
         {this.title ? <div class="page-title"><h1>{this.title}</h1></div> : null}
         {this.subTitle ? <div class="page-subtitle"><h2>{this.subTitle}</h2></div> : null}
-				<div class="page-content">
+				<div class="page-content" part="page-grid">
 					{(this.componentFullyLoaded && this.hasToc) && tableOfContentSlot}
 
-					<div class="container">
+					<div class="container" part="page-container">
 						{this.componentFullyLoaded ?
-              <div class="container-content">
+              <div class="container-content" part="page-slot-container">
                 <slot />
               </div>
 							: <psk-ui-loader shouldBeRendered={true} />}
