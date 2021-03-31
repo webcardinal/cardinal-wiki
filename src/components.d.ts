@@ -14,6 +14,7 @@ export namespace Components {
         "title": string;
     }
     interface PskCode {
+        "file": string;
         "language": string;
         "title": string;
     }
@@ -154,6 +155,7 @@ declare namespace LocalJSX {
         "title"?: string;
     }
     interface PskCode {
+        "file"?: string;
         "language"?: string;
         "title"?: string;
     }

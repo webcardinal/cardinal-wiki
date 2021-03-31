@@ -29,18 +29,31 @@ export class PskCode {
   })
   @Prop() language: string = 'xml';
 
+  @Prop() file: string = "";
+
   @State() componentCode: string = "";
   @Element() host: HTMLDivElement;
 
 
-  componentWillLoad() {
-    this.componentCode = this.host.innerHTML;
-    let styleElement = this.host.querySelector("style");
-    if (styleElement) {
-      this.host.innerHTML = styleElement.outerHTML;
-      this.componentCode = this.componentCode.replace(styleElement.outerHTML, "");
-    } else {
-      this.host.innerHTML = "";
+  async componentWillLoad() {
+    if (this.file) {
+        try {
+            const file = await fetch(this.file);
+            this.componentCode = await file.text();
+        } catch (error) {
+            console.error('File can not be fetched\n', this.host, error)
+        }
+    }
+
+    if (!this.componentCode) {
+        this.componentCode = this.host.innerHTML;
+        let styleElement = this.host.querySelector("style");
+        if (styleElement) {
+            this.host.innerHTML = styleElement.outerHTML;
+            this.componentCode = this.componentCode.replace(styleElement.outerHTML, "");
+        } else {
+            this.host.innerHTML = "";
+        }
     }
   }
 
