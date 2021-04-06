@@ -29,6 +29,8 @@ export class PskTable {
     @State() tableContent: Array<HTMLElement> = null;
 
     render() {
+        if(!this.element.isConnected) return null;
+
         return (
             <div class="table-responsive">
                 <table class="table">

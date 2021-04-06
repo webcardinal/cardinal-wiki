@@ -73,6 +73,8 @@ export class PskPage {
 	@Element() private element: HTMLElement;
 
 	render() {
+        if(!this.element.isConnected) return null;
+
 		this.hasToc && this._sendTableOfContentChapters();
 
 		const tableOfContentSlot = (

@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, getElement, h, Listen, Prop, State } from "@stencil/core";
+import { Component, Event, EventEmitter, getElement, h, Listen, Prop, State, Element } from "@stencil/core";
 import { BindModel, CustomTheme, TableOfContentEvent, TableOfContentProperty } from "@cardinal/internals";
 import { normalizeElementId } from "@cardinal/internals"; // utils
 import { Chapter } from "../../interfaces";
@@ -8,6 +8,8 @@ import { Chapter } from "../../interfaces";
     styleUrl: "../../assets/css/bootstrap/bootstrap.css"
 })
 export class PskChapter {
+    @Element() htmlElement: HTMLElement;
+
 	@CustomTheme()
 	@BindModel() modelHandler;
 	@TableOfContentProperty({
@@ -81,6 +83,8 @@ export class PskChapter {
 	}
 
 	render() {
+        if(!this.htmlElement.isConnected) return null;
+        
 		return (
 			<psk-card
 				title={this.title}

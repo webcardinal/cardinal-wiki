@@ -1,4 +1,4 @@
-import { Component, h, Prop } from "@stencil/core";
+import { Component, h, Prop, Element } from "@stencil/core";
 import { CustomTheme, TableOfContentProperty } from "@cardinal/internals";
 
 /**
@@ -10,6 +10,8 @@ import { CustomTheme, TableOfContentProperty } from "@cardinal/internals";
 })
 
 export class PskExample {
+    @Element() htmlElement: HTMLElement;
+
   @CustomTheme()
 
 	@TableOfContentProperty({
@@ -20,6 +22,8 @@ export class PskExample {
 	@Prop() title: string = "";
 
 	render() {
+        if(!this.htmlElement.isConnected) return null;
+        
 		return (
 			<psk-chapter title={this.title}>
         <div class="example-content">

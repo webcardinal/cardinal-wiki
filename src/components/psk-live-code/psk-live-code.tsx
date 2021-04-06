@@ -49,6 +49,8 @@ export class PskLiveCode {
 	}
 
 	render() {
+        if(!this._hostElement.isConnected) return null;
+
 		return (
 			<div class="live-editor-container">
 				<textarea

@@ -1,4 +1,4 @@
-import { Component, Prop, State, Listen, h } from "@stencil/core";
+import { Component, Prop, State, Listen, h, Element } from "@stencil/core";
 import { normalizeElementId } from "@cardinal/internals";
 import { EventOptions } from "../../decorators/declarations/declarations";
 
@@ -10,6 +10,7 @@ import { EventOptions } from "../../decorators/declarations/declarations";
 })
 
 export class PskControllerDescriptor {
+    @Element() htmlElement: HTMLElement;
 
     @Prop() title: string = "";
 
@@ -25,6 +26,8 @@ export class PskControllerDescriptor {
     }
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+
         let componentControllersDefinitions = this.decoratorControllers.map((controller: EventOptions) => {
             const cardSubtitle = `${controller.eventName}: CustomEvent`;
             const required = `Required : ${controller.controllerInteraction.required}`

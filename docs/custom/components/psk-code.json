@@ -17,6 +17,23 @@
   },
   "props": [
     {
+      "name": "file",
+      "type": "string",
+      "mutable": false,
+      "attr": "file",
+      "reflectToAttr": false,
+      "docs": "",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
       "name": "language",
       "type": "string",
       "mutable": false,

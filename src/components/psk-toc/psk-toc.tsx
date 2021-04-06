@@ -1,4 +1,4 @@
-import { Component, getElement, h, Listen, Prop, State } from '@stencil/core';
+import { Component, getElement, h, Listen, Prop, State, Element } from '@stencil/core';
 import { CustomTheme, TableOfContentProperty } from '@cardinal/internals';
 import { closestParentElement, scrollToElement } from '@cardinal/internals'; // utils
 import { Chapter } from '../../interfaces';
@@ -7,6 +7,8 @@ import { Chapter } from '../../interfaces';
     tag: 'psk-toc',
 })
 export class PskToc {
+    @Element() htmlElement: HTMLElement;
+
     @CustomTheme()
 
     @TableOfContentProperty({
@@ -101,6 +103,8 @@ export class PskToc {
     }
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         if ((!this.initialChapterSetupDone || !this.activeChapter)
             && this.chapterList.length > 0) {
             this.activeChapter = this.chapterList[0].guid;

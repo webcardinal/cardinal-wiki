@@ -49,6 +49,8 @@ export class PskPropertyDescriptor {
     }
 
     render() {
+        if(!this.__host.isConnected) return null;
+
         let componentPropertiesDefinitions = this.decoratorProperties.map((prop: PropertyOptions) => {
             const cardSubtitle = `${prop.propertyName}${prop.isMandatory ? "" : "?"}: ${prop.propertyType} ${prop.isMandatory ? "(mandatory)" : "(optional)"}`;
             return (

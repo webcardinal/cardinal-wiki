@@ -1,4 +1,4 @@
-import { Component, h, Prop } from "@stencil/core";
+import { Component, h, Prop, Element } from "@stencil/core";
 import { TableOfContentProperty } from "@cardinal/internals";
 
 @Component({
@@ -6,6 +6,7 @@ import { TableOfContentProperty } from "@cardinal/internals";
 })
 
 export class PskDescription {
+    @Element() htmlElement: HTMLElement;
 
 	@TableOfContentProperty({
 		description: `This property is the title of the new psk-card/psk-chapter that will be created.`,
@@ -16,6 +17,8 @@ export class PskDescription {
 	@Prop() title: string = "";
 
 	render() {
+        if(!this.htmlElement.isConnected) return null;
+        
 		const descriptionBody = (
 			<div class="psk-description">
 				<slot />

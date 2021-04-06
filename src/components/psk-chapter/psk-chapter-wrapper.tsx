@@ -1,4 +1,4 @@
-import { Component, h, Prop } from "@stencil/core";
+import { Component, h, Prop, Element } from "@stencil/core";
 
 /**
  * @disable cheatsheet
@@ -8,10 +8,13 @@ import { Component, h, Prop } from "@stencil/core";
 })
 
 export class PskChapterWrapper {
+    @Element() htmlElement: HTMLElement;
 
     @Prop() title: string;
 
     render() {
+        if(!this.htmlElement.isConnected) return null;
+        
         return (
             <psk-chapter title={this.title}>
                 <div class="sub-card">

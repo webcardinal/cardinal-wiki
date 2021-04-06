@@ -62,6 +62,8 @@ export class PskCode {
   }
 
   render() {
+    if(!this.host.isConnected) return null;
+
     let componentCode = document.createElement('textarea');
     componentCode.innerHTML = this.componentCode;
     let decodedCode = componentCode.value;

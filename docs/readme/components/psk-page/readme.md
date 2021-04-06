@@ -26,6 +26,7 @@
 | ----------------------- | ----------- |
 | `"page-container"`      |             |
 | `"page-grid"`           |             |
+| `"page-main"`           |             |
 | `"page-slot-container"` |             |
 | `"page-toc"`            |             |
 
