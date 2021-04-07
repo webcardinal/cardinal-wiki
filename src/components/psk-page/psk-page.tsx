@@ -90,7 +90,7 @@ export class PskPage {
           <div class="psk-badge-text" style={{color:this.badgeTextColor}}>{this.badgeText}</div>
         </div>:null}
 
-        {this.title ? <div class="page-title"><h1>{this.title}</h1></div> : null}
+        {this.title ? <div class="page-title" part="page-header"><h1 part="page-title">{this.title}</h1></div> : null}
         {this.subTitle ? <div class="page-subtitle"><h2>{this.subTitle}</h2></div> : null}
 				<div class="page-content" part="page-grid">
 					{(this.componentFullyLoaded && this.hasToc) && tableOfContentSlot}
