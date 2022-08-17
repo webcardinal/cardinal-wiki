@@ -20,7 +20,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "prismjs": "^1.25.0"
+    "prismjs": "^1.28.0"
   },
   "devDependencies": {
     "@stencil/core": "^2.3.0"
